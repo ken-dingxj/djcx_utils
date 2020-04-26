@@ -1,7 +1,7 @@
 {
-  "name": "djUtils",
-  "version": "1.0.1",
-  "description": "",
+  "name": "dUtils",
+  "version": "1.0.0",
+  "description": "dapi工具库",
   "main": "index.js",
   "directories": {
     "example": "example"
@@ -9,27 +9,21 @@
   "scripts": {
     "test": "jest",
     "build": "rollup -c",
-    "build:cjs": "rollup -c -f cjs -o dist/d_utils.cjs.js",
-    "build:amd": "rollup -c -f amd -o dist/d_utils.amd.js",
-    "build:esm": "rollup -c -f esm -o dist/d_utils.esm.js",
-    "build:iife": "rollup -c -f iife -o dist/d_utils.iife.js -n d_utils",
-    "build:umd": "rollup -c -f umd -o dist/d_utils.umd.js -n d_utils",
-    "build:system": "rollup -c -f system -o dist/d_utils.system.js",
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ken-dingxj/d_utils.git"
+    "url": "git+https://github.com/ken-dingxj/utils.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/ken-dingxj/d_utils/issues"
+    "url": "https://github.com/ken-dingxj/utils/issues"
   },
-  "homepage": "https://github.com/ken-dingxj/d_utils#readme",
+  "homepage": "https://github.com/ken-dingxj/utils#readme",
   "devDependencies": {
     "@babel/cli": "^7.8.4",
     "@babel/core": "^7.9.0",

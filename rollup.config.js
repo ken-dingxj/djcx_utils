@@ -2,7 +2,7 @@
  * @Description:
  * @Author: dingxuejin
  * @Date: 2020-04-22 09:57:51
- * @LastEditTime: 2020-04-25 15:03:00
+ * @LastEditTime: 2020-04-25 16:19:03
  * @LastEditors: dingxuejin
  */
 import typescript from "rollup-plugin-typescript";
@@ -18,7 +18,7 @@ let year = new Date().getFullYear(),version = pkg.version;
 let bannerText = `djUtils v${version}
 (c) 2020-${year} dxj https://github.com/ken-ding/utils
 Licensed under MIT
-Released on: oct 21, 2020`;
+Released on: Apr 25, 2020`
 
 let config={
   input:"src/index.ts",
