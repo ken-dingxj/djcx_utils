@@ -1,6 +1,6 @@
 {
   "name": "djcx_utils",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "dapi工具库",
   "main": "index.js",
   "directories": {
