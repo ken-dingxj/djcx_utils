@@ -1,5 +1,5 @@
 /**
- * djUtils v1.0.0
+ * djUtils v1.0.1
  * (c) 2020-2020 dxj https://github.com/ken-ding/utils
  * Licensed under MIT
  * Released on: Apr 25, 2020
@@ -39,7 +39,8 @@
       };
       return dt;
   }());
+  var index = new dt();
 
-  return dt;
+  return index;
 
 })));

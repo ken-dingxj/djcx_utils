@@ -26,4 +26,4 @@ class dt {
   }
 }
 
-export default dt;
+export default new dt();

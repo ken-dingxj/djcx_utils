@@ -2,11 +2,10 @@
  * @Description:
  * @Author: dingxuejin
  * @Date: 2020-04-25 13:47:13
- * @LastEditTime: 2020-05-01 18:23:52
+ * @LastEditTime: 2020-05-01 18:36:08
  * @LastEditors: dingxuejin
  */
-import Dt from "../dist/utils.js";
-const dt = new Dt();
+import dt from "../dist/utils.js";
 
 expect.extend({
   toBeWithinUuid(received, Reg) {
