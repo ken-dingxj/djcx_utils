@@ -1,5 +1,5 @@
 {
-  "name": "dUtils",
+  "name": "djcx_utils",
   "version": "1.0.0",
   "description": "dapi工具库",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "scripts": {
     "test": "jest",
-    "build": "rollup -c",
+    "build": "npm run test&&rollup -c",
     "patch": "npm version patch",
     "minor": "npm version minor",
     "major": "npm version major"
