@@ -26,7 +26,7 @@ require(['djcx_utils'],function(dt){
 ```
 ### 直接引入
 ```js
-<script src="https://cdn.jsdelivr.net/npm/djcx_utils/dist/djcx_utils.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/djcx_utils/dist/utils.min.js"></script>
     dt.trim('test')
 ```
 ## 方法说明
