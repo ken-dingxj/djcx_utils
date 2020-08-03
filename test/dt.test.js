@@ -2,13 +2,16 @@
  * @Description:
  * @Author: dingxuejin
  * @Date: 2020-04-25 13:47:13
- * @LastEditTime: 2020-05-01 18:36:08
+ * @LastEditTime: 2020-08-03 16:11:50
  * @LastEditors: dingxuejin
  */
 import dt from "../dist/utils.js";
 
 expect.extend({
   toBeWithinUuid(received, Reg) {
+    console.log(
+      received
+    );
     const pass = Reg.test(received);
     if (pass) {
       return {
@@ -36,4 +39,10 @@ test("trim case2", () => {
 test("uuid case1", () => {
   let Reg = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/g;
   expect(dt.uuid()).toBeWithinUuid(Reg);
+});
+
+//getIps
+test("getIp case1", () => {
+  let Reg = /^([0,1]?\d{1,2}|2([0-4][0-9]|5[0-5]))(\.([0,1]?\d{1,2}|2([0-4][0-9]|5[0-5]))){3}$/g;
+  expect(dt.getIp()).toBeWithinUuid(Reg);
 });

@@ -1,5 +1,5 @@
 /**
- * djUtils v1.0.1
+ * djUtils v1.0.2
  * (c) 2020-2020 dxj https://github.com/ken-ding/utils
  * Licensed under MIT
  * Released on: Apr 25, 2020
@@ -36,6 +36,32 @@
           s[8] = s[13] = s[18] = s[23] = "-";
           var uuid = s.join("");
           return uuid;
+      };
+      /**
+       * 获取本机ip
+       */
+      dt.prototype.getIp = function () {
+          var os = require("os");
+          var needHost = ""; // 打开的host
+          try {
+              // 获得网络接口列表
+              var network = os.networkInterfaces();
+              for (var dev in network) {
+                  var iface = network[dev];
+                  for (var i = 0; i < iface.length; i++) {
+                      var alias = iface[i];
+                      if (alias.family === "IPv4" &&
+                          alias.address !== "127.0.0.1" &&
+                          !alias.internal) {
+                          needHost = alias.address;
+                      }
+                  }
+              }
+          }
+          catch (e) {
+              needHost = "localhost";
+          }
+          return needHost;
       };
       return dt;
   }());
